@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+</br> </br>
+<img src="https://www.playstoresales.com/wp-content/uploads/2018/04/Google-Play-Movies.png" alt="Search"> 
+</br> </br>
+
+<input type="text" id="myInput" value="" onkeydown = "if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+</br> </br>
+
+<button id = "btnSearch" onclick="myFunction()">Search</button>
+<p id="demo"></p>
+
+</center>
+
+<script>
+function myFunction() {
+    var mystring = document.getElementById("myInput").value;
+    mystring = encodeURI(mystring);
+    mystring ="https://www.google.com/search?q=" + mystring + "+-inurl%3A%28htm%7Chtml%7Cphp%7Cpls%7Ctxt%29+intitle%3Aindex.of+\“last+modified\”+%28mkv%7Cmp4%7Cavi%29";
+    document.getElementById("demo").innerHTML = mystring;
+    window.location.href = mystring;
+}
+</script>
+
+
+
+</body>
+</html>
