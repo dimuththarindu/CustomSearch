@@ -18,7 +18,7 @@
 function myFunction() {
     var mystring = document.getElementById("myInput").value;
     mystring = encodeURI(mystring);
-    mystring ="https://www.google.com/search?q=" + mystring + "+-inurl%3A%28htm%7Chtml%7Cphp%7Cpls%7Ctxt%29+intitle%3Aindex.of+\“last+modified\”+%28mkv%7Cmp4%7Cavi%29";
+    mystring ="https://www.google.com/search?q=" + mystring + "+-inurl%3A%28htm%7Chtml%7Cphp%7Cpls%7Ctxt%29+intitle%3Aindex.of+%28mkv%7Cmp4%7Cavi%29";
     document.getElementById("demo").innerHTML = mystring;
     window.location.href = mystring;
 }
