@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Custom Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- <h1>Heading</h1> -->
+</header>
+
+<section class="center">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Search"> <br>
+    <input type="text" id="userInput" value="" onkeydown = "if (event.keyCode == 13) document.getElementById('btnSearch').click()" class="SearchBar"> <br>
+
+    <span> Category </span>
+    <select id="selCat" >
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+    </select> <br>
+
+    <button id="btnSearch" onclick="myFunction(selCat.value, userInput.value)" class="SearchBtn" >Google Search</button> <br>
+    <p id="SearchURLOutput" class="OutputURL"></p>
+</section>
+
+<footer class="footer">    
+    <span>Powered by <strong>Google</strong> Search</span> <br>
+    <span>Hosted @ <strong>GitHub.com</strong></span>
+</footer>
+
+</body>
+</html> 
