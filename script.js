@@ -1,4 +1,3 @@
-
 function myFunction() {
     var mystring = document.getElementById("myInput").value + " -inurl:(htm|html|php|pls|txt) intitle:index.of (3gp|avi|flv|mkv|mov|mp4|mpeg|mpg|wmv)";
     mystring = encodeURI(mystring);
