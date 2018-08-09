@@ -2,7 +2,7 @@
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -70,4 +70,15 @@
     font: 10px arial,sans-serif;
     font-weight: normal;
     color: #757575;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 1em;
+    width: 100%;
+    color: #a8a8a8;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
 }
