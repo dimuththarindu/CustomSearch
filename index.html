@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
 <body>
 
-<center>
-<br> <br>
-<img src="https://raw.githubusercontent.com/dimuththarindu/CustomSearch/master/image.png" alt="Search"> 
-<br>
-<input type="text" id="myInput" value="" onkeydown = "if (event.keyCode == 13) document.getElementById('btnSearch').click()">
-<br> <br>
+<header>
+    <!-- <h1>Heading</h1> -->
+</header>
 
-<button id = "btnSearch" onclick="myFunction()">Search</button>
-<p id="demo"></p>
+<section class="center">
 
-</center>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Search"> <br>
+    <input type="text" id="myInput" value="" onkeydown = "if (event.keyCode == 13) document.getElementById('btnSearch').click()" class="SearchBar"> <br>
+    <button id="btnSearch" onclick="myFunction()" class="SearchBtn" >Google Search</button> <br>
+    <p id="SearchURLOutput" class="OutputURL"></p>
+    
+</section>
 
-<script>
-function myFunction() {
-    var mystring = document.getElementById("myInput").value;
-    mystring = encodeURI(mystring);
-    mystring ="https://www.google.com/search?q=" + mystring + "+-inurl%3A%28htm%7Chtml%7Cphp%7Cpls%7Ctxt%29+intitle%3Aindex.of+%28mkv%7Cmp4%7Cavi%29";
-    document.getElementById("demo").innerHTML = mystring;
-    window.location.href = mystring;
-}
-</script>
-
+<footer>
+    <!-- <p>Footer</p> -->
+</footer>
 
 
 </body>
