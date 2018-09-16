@@ -10,7 +10,7 @@ function funWebIndex() {
 function funGoogleDrive() {
     //alert("this function is called");
     var userInput = document.getElementById("myInput").value;
-    var googleDriveString = userInput + " site:docs.google.com/document/d";
+    var googleDriveString = userInput + " site:docs.google.com/file/d";
     googleDriveString = encodeURI(googleDriveString);
     googleDriveString ="https://www.google.com/search?q=" + googleDriveString;
     window.open(googleDriveString, '_blank');    
