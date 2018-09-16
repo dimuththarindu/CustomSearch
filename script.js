@@ -8,7 +8,8 @@ function myFunction() {
     googleDriveString = userInput + googleDriveString;
     //document.getElementById("SearchURLOutput").innerHTML = mystring;
     //window.location.href = mystring;
-    //
-    window.open(webIndexstring, '_blank');
+    
     window.open(googleDriveString, '_blank');
+    window.open(webIndexstring, '_blank');
+    
 }
