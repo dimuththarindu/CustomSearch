@@ -9,5 +9,5 @@ function myFunction() {
     
     window.open(webIndexstring, '_blank');
     window.open(googleDriveString, '_blank');    
-    
+    return false;
 }
